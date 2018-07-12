@@ -1,0 +1,34 @@
+.content-md {
+    background-color:#3b58e2;
+}
+
+.boton{
+    position: absolute;
+    bottom: 2em;
+    margin: 0 33%;
+}
+
+ion-content{
+    background: url(../../assets/imgs/LogoBlue.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+.letrero h3{
+    font-family: "Homer Simpson", cursive;
+    font-size: 15px;
+    text-align: center;
+    color: #ffff66;
+    border-color:#3b58e2;
+}
+
+.custom-icon {
+    font-size: 64px;
+    color : red;
+}
