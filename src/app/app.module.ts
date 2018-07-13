@@ -6,13 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Geolocation } from '@ionic-native/geolocation';
-import {Diagnostic} from '@ionic-native/diagnostic';
+import { Diagnostic } from '@ionic-native/diagnostic';
 import { GeolocationPage } from '../pages/geolocation/geolocation';
+import { LoadingPage } from '../pages/loading/loading';
 
 
 @NgModule({
   declarations: [
     MyApp,
+    LoadingPage,
     HomePage,
     GeolocationPage
   ],
@@ -23,6 +25,7 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoadingPage,
     HomePage,
     GeolocationPage
   ],

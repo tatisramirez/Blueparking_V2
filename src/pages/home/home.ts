@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController, NavController, Platform } from 'ionic-angular';
-import { Geolocation } from '@ionic-native/geolocation';
+import { AlertController, NavController } from 'ionic-angular';
 import { Diagnostic } from '@ionic-native/diagnostic';
 import { GeolocationPage } from '../geolocation/geolocation';
 
@@ -14,7 +13,7 @@ export class HomePage {
   public isWifiEnabled: boolean = false;
   public isLocationEnabled: boolean = false;
 
-  constructor(public navCtrl: NavController, private alertCtrl: AlertController, private geolocation: Geolocation, private diagnostic: Diagnostic, private platform: Platform) { }
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController, private diagnostic: Diagnostic) { }
 
   presentAlert() {
     let alert = this.alertCtrl.create({
