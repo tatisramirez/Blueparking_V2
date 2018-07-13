@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { AlertController, NavController, Platform } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Diagnostic } from '@ionic-native/diagnostic';
+import { GeolocationPage } from '../geolocation/geolocation';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
+  
 })
 export class HomePage {
 
@@ -24,8 +26,10 @@ export class HomePage {
   }
 
   goToMaps() {
+    this.navCtrl.setRoot(GeolocationPage);
     this.isLocationAvailable();
     this.isWifiAvailable();
+
   }
 
   isWifiAvailable() {

@@ -7,12 +7,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Geolocation } from '@ionic-native/geolocation';
 import {Diagnostic} from '@ionic-native/diagnostic';
+import { GeolocationPage } from '../pages/geolocation/geolocation';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    GeolocationPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import {Diagnostic} from '@ionic-native/diagnostic';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    GeolocationPage
   ],
   providers: [
     StatusBar,
